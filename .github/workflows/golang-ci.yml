@@ -67,7 +67,7 @@ jobs:
                 channel: '#gh-wk4'
                 message: 'Golang CI and Docker Image Build - ${{ job.status }}'
               env:
-                SLACK_WEB_HOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+                SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
                 SLACK_USERNAME: GH-WK4 Actions
                 SLACK_ICON_EMOJI: ':rocket:'
                 SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
