@@ -64,7 +64,7 @@ jobs:
               uses: 8398a7/action-slack@v3
               with:
                 status: ${{ job.status }}
-                channel: '#all-eaglebots'
+                channel: '#gh-wk4'
                 message: 'Golang CI and Docker Image Build - ${{ job.status }}'
               env:
                 SLACK_WEB_HOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
